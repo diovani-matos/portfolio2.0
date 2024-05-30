@@ -1,0 +1,40 @@
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --white: #F5FBEF;
+    --primary-blue: #3A80CF;
+    --secondary-blue: #245894;
+    --black: #262626;
+}
+
+body{
+    background-color: var(--white);
+}
+
+.btn-default{
+    background-color: var(--primary-blue);
+    border: none;
+    font-size: 1.1rem;
+    color: var(--white);
+    padding: 8px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-default:hover{
+    background-color: var(--secondary-blue);
+}
+

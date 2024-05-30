@@ -1,0 +1,95 @@
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 91px);
+    margin: 0px 10%;
+
+}
+
+#hero h1{
+    font-size: 3.5rem;
+    color: var(--black);
+    line-height: 150%;
+}
+
+#hero p{
+    color: rgb(88, 88, 88);
+    font-size: 1.150rem;
+    line-height: 150%;
+    margin: 10px 0px 40px 0px;
+}
+
+#hero p span {
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+#img_home {
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+#img_home img{
+    width: 100%;
+    max-width: 280px;
+    border-radius: 50%;
+}
+
+#hero_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#social_icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+
+}
+
+#social_icons a{
+    color: var(--black);
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #home{
+        margin: 0px 5%;
+    }
+
+    #hero{
+        text-align: center;
+    }
+
+    #hero h1{
+        font-size: 2.8rem;
+    }
+
+    #hero p{
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+
+    #img_home{
+        display: none;
+    }
+
+    #hero_btn{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #social_icons{
+        font-size: 2.2rem;
+        gap: 30px;
+    }
+
+    #hero_btn .btn-default{
+        font-size: 1.3rem;
+    }
+}
