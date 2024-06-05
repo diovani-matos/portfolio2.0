@@ -25,15 +25,11 @@
     font-weight: 500;
 }
 
-#img_home {
-    background-color: var(--black);
-    border-radius: 50%;
-}
 
-#img_home img{
-    width: 100%;
-    max-width: 280px;
+#img_home{
+    background-color: var(--primary-blue);
     border-radius: 50%;
+    max-width: 280px;
 }
 
 #hero_btn{

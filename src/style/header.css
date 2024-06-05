@@ -3,7 +3,12 @@ header{
     padding: 28px 8%;
     background-color: var(--black);
     color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
 }
+
 
 header a {
     color: var(--white); 
@@ -61,6 +66,7 @@ header a {
 
 @media screen and (max-width: 1000px) {
 
+
     #nav_list{
         display: none;
     }
@@ -88,4 +94,10 @@ header a {
         gap: 12px;
         margin: 12px 0px;
     }
+}
+
+header.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.89); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }

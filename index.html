@@ -26,6 +26,11 @@
     <!-- jquery -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- scrollreveal ===================== -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- ===================== -->
 
     <title>DiovaniMatos Dev</title>
@@ -61,18 +66,17 @@
                 <p>Precisa de um site para destacar seu negócio? Solicite um orçamento <span>gratuito!</span></p>
 
                 <div id="hero_btn">
-                    <button class="btn-default"><i class="fa-solid fa-download"></i> Download CV</button>
+                    <button class="btn-default" onclick="downloadCv()"><i class="fa-solid fa-download"></i> Download CV</button>
                     <div id="social_icons">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/diovani-matos" target="_blank" rel="no-referrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/diovani-matos-333a2a228/" target="_blank" rel="no-referrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/5551994477827" target="_blank" rel="no-referrer"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div id="img_home">
-                <img src="src/images/img-home.png" alt="">
-            </div>
+            <img src="src/images/img-home.png" alt="" id="img_home">
+
         </section>
 
         <section id="about">
@@ -87,18 +91,53 @@
                 <div id="about_tech">
                     <p>Principais tecnologias</p>
                     <div id="tech_icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-sass"></i>
-                        <i class="fa-brands fa-react"></i>
-                        <i class='bx bxl-tailwind-css'></i>
+                        <i class="fa-brands fa-html5" style="color: #E65C22;"></i>
+                        <i class="fa-brands fa-css3" style="color: #306AF1;"></i>
+                        <i class="fa-brands fa-js" style="color: #F7E025;"></i>
+                        <i class="fa-brands fa-sass" style="color: #CE6B9C;"></i>
+                        <i class="fa-brands fa-react" style="color: #66DBFB;"></i>
+                        <i class='bx bxl-tailwind-css' style="color: #3EBFF8;"></i>
                     </div>
                 </div>
             </div>
 
         </section>
+
+        <section id="projects">
+            <h2>Conheça alguns dos meus projetos</h2>
+            <div id="project_content">
+                <div class="project-card">
+                    
+                    <a href="https://dudevburger.vercel.app/" target="_blank"><img src="src/images/dudev-burger.png" alt="projeto1"></a>
+                </div>
+                <div class="project-card">
+                    
+                    <a href="https://barbearia2-0.vercel.app/" target="_blank"><img src="src/images/barbearia.png" alt="projeto2"></a>
+                </div>
+                <div class="project-card">
+                    
+                    <a href="https://site-restaurante-self.vercel.app/" target="_blank"><img src="src/images/paladar.png" alt="projeto3"></a>
+                </div>
+                <div class="project-card">
+                    
+                    <a href="https://panetteria.vercel.app/" target="_blank"><img src="src/images/panetteria.png" alt="projeto4"></a>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+
+        <div id="footer_itens">
+            <span>&copy Desenvolvido por Diovani Matos</span>
+
+            <div id="footer_social_icons">
+                <a href="https://github.com/diovani-matos" target="_blank" rel="no-referrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/diovani-matos-333a2a228/" target="_blank" rel="no-referrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/5551994477827" target="_blank" rel="no-referrer"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
     
     <script src="src/js/index.js"></script>
 </body>
